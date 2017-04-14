@@ -1,0 +1,75 @@
+@media all and (min-width: 1240px) {
+	.wrap-center {
+		width: 1200px;
+	}
+
+	.search-form__input,
+	.header-search.small .search-form__input {
+		width: 330px;
+	}
+
+	.main-menu__item {
+		margin-left: 15px;
+	}
+
+	.filter-form__col-1 {
+		width: 220px;
+	}
+
+	.filter-form__col-2 {
+		width: 202px;
+	}
+
+	.filter-form__col-3 {
+		width: 342px;
+	}
+
+	.filter-form__group {
+		width: 112px;
+
+		.filter-form__label {
+			text-align: right;
+			width: 30px;
+		}
+
+		.filter-form__input {
+			width: 70px;
+		}
+	}
+
+	.filter-form__reset {
+		margin: 0 15px;
+	}
+
+	.goods-carousel__item {
+
+		&:first-child {
+			width: 303px !important;
+		}
+	}
+
+	.cart-steps__item {
+		width: 165px;
+		margin-left: 125px;
+
+		&:before {
+			margin-right: 32px;
+		}
+	}
+
+	.cart-steps__icon {
+		width: 100px;
+	}
+
+	.cart-steps.login .cart-steps__item {
+		width: 165px;
+	}
+
+	.advices__in.responsive {
+
+		.advices__in__item {
+			width: 33.3333%;
+		}
+
+	}
+}

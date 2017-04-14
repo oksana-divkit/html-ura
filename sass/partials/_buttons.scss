@@ -1,0 +1,129 @@
+/* Buttons
+-----------------------------------------------------------------------------*/
+.btn-green {
+	display: inline-block;
+	color: #fff;
+	padding: 5px 15px 6px;
+	border-radius: 5px;
+	font: 14px/1 $roboto;
+	border: 0;
+	text-decoration: none;
+	background: #135b26;
+	position: relative;
+	@include transition (background linear .133s);
+	@include box-sizing(border-box);
+
+	&:hover {
+		background: #f15922;
+	}
+
+	&:focus,
+	&:active {
+		background: #f15922;
+		padding: 4px 14px 5px;
+		border: 1px solid #dadada;
+	}
+}
+
+.btn-gray {
+	display: inline-block;
+	color: #fff;
+	padding: 5px 9px 6px;
+	border-radius: 5px;
+	font: 14px/1 $roboto;
+	border: 0;
+	text-decoration: none;
+	background: #b6b6b6;
+	position: relative;
+	@include transition (background linear .133s);
+	@include box-sizing(border-box);
+
+	&:hover {
+		background: #f15922;
+	}
+
+	&:focus,
+	&:active {
+		background: #f15922;
+		padding: 4px 8px 5px;
+		border: 1px solid #dadada;
+	}
+}
+
+.btn-white {
+	display: inline-block;
+	color: #fff;
+	padding: 4px 15px 5px;
+	border-radius: 5px;
+	position: relative;
+	font: 14px/1 $roboto;
+	border: 0;
+	text-decoration: none;
+	border: 1px solid #fff;
+	@include transition (all linear .133s);
+	@include box-sizing(border-box);
+
+	&:hover {
+		background: #f15922;
+	}
+
+	&:focus,
+	&:active {
+		background: #f15922;
+		border-color: #dadada;
+	}
+}
+
+.btn-white-f {
+	display: inline-block;
+	color: #000;
+	position: relative;
+	padding: 4px 21px 5px;
+	border-radius: 5px;
+	font: 14px/1 $roboto;
+	border: 0;
+	text-decoration: none;
+	border: 1px solid #fff;
+	background: #fff;
+	@include transition (background linear .133s);
+	@include box-sizing(border-box);
+
+	&:hover {
+		background: #f15922;
+		color: #fff;
+	}
+
+	&:focus,
+	&:active {
+		background: #f15922;
+		border-color: #dadada;
+		color: #fff;
+	}
+}
+
+.btn-orange {
+	display: inline-block;
+	color: #fff;
+	padding: 4px 15px 5px;
+	border-radius: 5px;
+	position: relative;
+	font: 14px/1 $roboto;
+	border: 0;
+	text-decoration: none;
+	border: 1px solid #f15922;
+	background: #f15922;
+	@include transition (all linear .133s);
+	@include box-sizing(border-box);
+
+	&:hover {
+		background: #fff;
+		color: #f15922;
+	}
+
+	&:focus,
+	&:active {
+		background: #fff;
+		color: #f15922;
+		
+	}
+}

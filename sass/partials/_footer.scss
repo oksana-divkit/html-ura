@@ -1,0 +1,120 @@
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	padding: 20px 0;
+	background: #b6b6b6;
+}
+
+.sticky-bar {
+	height: 50px;
+	padding: 12px 0 0;
+	background: #575757;
+	@include box-sizing(border-box);
+
+	&__help {
+		float: left;
+		margin: 0 0 0 3px;
+		padding-left: 9px;
+		padding-right: 9px;
+
+		.icon-phone-w {
+			margin: -1px 5px 0 0;
+			top: 1px;
+			position: relative;
+		}
+	}
+
+	&__cart {
+		float: right;
+		margin: 0 6px 0 55px;
+	}
+
+	&__sum {
+		font: 18px/1.2 $roboto;
+		color: #fff;
+		display: inline-block;
+		margin: 0 7px 0 0;
+		vertical-align: middle;
+	}
+
+	&__compare {
+		float: right;
+		margin: 0 0 0 47px;
+	}
+
+	&__login {
+		margin: 5px 0 0 35px;
+		float: right;
+	}
+
+	&__user {
+		text-decoration: underline;
+		color: #fff;
+		font: 12px/1.2 $roboto;
+		font-weight: 300;
+
+		.icon-user {
+			margin: 0 4px 0 0;
+			top: 2px;
+			position: relative;
+		}
+	}
+
+	&__logout {
+		display: inline-block;
+		position: relative;
+		top: 3px;
+		margin: 0 0 0 10px;
+		@extend .icon-logout;
+	}
+}
+
+.sticky-bar-fix {
+	position: fixed;
+	z-index: 100;
+}
+
+.foot-left { float: left; margin-right: 70px; width: 250px; }
+	.foot-logo {
+		display: block;
+		width:244px;
+		height:139px;
+		background-image:url('../img/white-logo.png');
+	}
+	
+	@media (-webkit-min-device-pixel-ratio: 2),  (min-resolution: 192dpi) {
+		.foot-logo {
+			background-image:url('../img/white-logo2x.png');
+			background-size:244px 139px;
+		}
+	}
+	
+.foot-left p { margin: 20px 0 0 39px; }
+	.foot-left a { color: #000; } 
+
+.font-roboto { font-family: 'Roboto' !important; }
+
+.silver-site { background: url('../img/silversite.png') 0 50% no-repeat; padding-left: 14px; }
+
+@media (-webkit-min-device-pixel-ratio: 2),  (min-resolution: 192dpi) {
+	.silver-site {
+		background-image:url('../img/silversite2x.png');
+		background-size:12px 12px;
+	}
+}
+
+.foot-right { float: right; margin-left: 35px; text-align: right; width: 295px; }
+	.foot-right p { font-size: 14px; margin-top: 10px; }
+	.foot-right .btn-green { margin-left: 15px; }
+
+.foot-tel { font-size: 34px !important; font-weight: 400; }
+	.foot-tel__code { font-size: 24px; }
+	
+.foot-cont { font-size: 14px; overflow: hidden; padding-top: 16px; }
+	.foot-cont__col { float: left; margin-left: 60px; }
+	.foot-cont__col:first-child { margin-left: 0; }
+	.foot-cont p { color: #fff; font-weight: 700; }
+	
+.foot-menu { list-style: none; margin: 25px 0 0; padding: 0; }
+	.foot-menu__item { margin-top: 5px; }
+		.foot-menu__item__link { color: #fff; }

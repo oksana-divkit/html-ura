@@ -1,0 +1,70 @@
+/* Icons
+-----------------------------------------------------------------------------*/
+$icon-sprite-dimensions: true;
+//$icon-layout: vertical;
+//$icon-sort-by: 'name';
+$icon-spacing: 4px;
+
+@import "icon/*.png";
+@include all-icon-sprites;
+
+
+//$icon2x-sprite-dimensions: true;
+//$icon2x-layout: vertical;
+
+$icon2x: sprite-map("icon2x/*.png", $spacing: 8px);
+ 
+@media (-webkit-min-device-pixel-ratio: 2), 
+	(min-resolution: 192dpi) {
+
+	.icon-sprite {
+		background-image: sprite-url($icon2x);
+		background-size: image-width(sprite-path($icon-sprites)) image-height(sprite-path($icon-sprites));
+	}
+	
+}
+
+.icon-sprite {
+	display: inline-block;
+}
+
+.icon-help {
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	margin: 0 0 0 -10px;
+	border-radius: 5px;
+	text-align: center;
+	font: 9px/11px Arial, Helvetica, sans-serif;
+	background: #316f41;
+	text-decoration: none;
+	color: #fff;
+	position: relative;
+	top: -11px;
+	cursor: pointer;
+
+	&:hover {
+		background: #f15922;
+	}
+}
+
+.icon-btn-count {
+	position: absolute;
+	top: -9px;
+	right: -6px;
+	border: 1px solid #575757;
+	border-radius: 8px;
+	height: 17px;
+	min-width: 17px;
+	padding: 0 3px 0 2px;
+	text-align: center;
+	background: #ff0000;
+	font: 11px/14px $roboto;
+	color: #fff;
+	@include box-sizing(border-box);
+
+	&.cart-page {
+		background: #fffafa;
+		color: #000;
+	}
+}

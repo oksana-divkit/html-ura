@@ -1,0 +1,36 @@
+/* Popups
+-----------------------------------------------------------------------------*/
+
+.popup-wrap {
+	display: none;
+}
+
+.popup-block {
+	width: 344px;
+	padding: 32px 25px 49px;
+	background: #fff;
+	border-radius: 5px;
+	text-align: center;
+	@include box-sizing(border-box);
+}
+
+.popup-title {
+	margin: 0 0 20px;
+	text-align: center;
+	color: #000000;
+	font: 20px/1.2 $roboto;
+	font-weight: 300;
+}
+
+.fancybox-close {
+	cursor: pointer;
+	position: absolute;
+	top: 14px;
+	right: 17px;
+	@extend .icon-close;
+	@include transition(none);
+
+	&:hover {
+		@extend .icon-close-o;
+	}
+}
